@@ -148,7 +148,6 @@
       "vim-mode-plus-move-to-symbols"
       "language-rust"
       "git-time-machine"
-      "git-plus"
       "language-patch"
       "git-control"
       "git-log"
@@ -161,6 +160,9 @@
       "atom-clock"
       "hyperclick"
       "autocomplete-emojis"
+      "angular-snippets"
+      "language-actionscript"
+      "git-plus"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -169,7 +171,7 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "duotone-blue-dark-syntax"
+      "solarized-dark-syntax"
     ]
     titleBar: "hidden"
   "cursor-history":
@@ -188,8 +190,6 @@
     color: {}
   editor:
     atomicSoftTabs: false
-    fontFamily: "FiraCode-Retina"
-    fontSize: 20
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -198,6 +198,12 @@
   "find-and-replace":
     projectSearchResultsPaneSplitDirection: "right"
     scrollToResultOnLiveSearch: true
+  "fuzzy-finder":
+    ignoredNames: [
+      ".git"
+      "._*"
+      "*.png"
+    ]
   "git-diff":
     wrapAroundOnMoveToDiff: false
   "git-diff-details":
@@ -368,7 +374,6 @@
     hideCommandsFromCommandPalette: true
     hideStatusBarOnMaximizePane: false
     hideTabBarOnMaximizePane: false
-    highlightSearch: false
     highlightSearchExcludeScopes: [
       "narrow"
     ]

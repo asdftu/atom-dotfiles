@@ -17,7 +17,7 @@
   'cmd-ctrl-shift-up': 'window:move-active-item-to-pane-above'
   'cmd-ctrl-shift-down': 'window:move-active-item-to-pane-below'
 
-  'cmd-p': 'project-folder:add'
+  # 'cmd-p': 'project-folder:add'
 
   'cmd-x': 'vim-mode-plus:exchange-pane'
 
@@ -165,7 +165,7 @@
   'g s': 'inline-git-diff:stage-hunk'
 
 'atom-text-editor.vim-mode-plus.normal-mode:not(.narrow-editor)':
-  'enter': 'vim-mode-plus:redraw-cursor-line-at-upper-middle'
+  'enter': 'vim-mode-plus:move-to-last-character-of-line'
 
   # 'q': 'vim-mode-plus:change-subword-occurrence'
 
@@ -208,6 +208,10 @@
   'ctrl-k': 'window:focus-pane-above'
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-l': 'window:focus-pane-on-right'
+  'space w h': 'window:focus-pane-on-left'
+  'space w l': 'window:focus-pane-on-right'
+  'space w j': 'window:focus-pane-on-below'
+  'space w k': 'window:focus-pane-on-above'
 
   # open-on-github, github-diff: g
   # -------------------------
@@ -369,7 +373,7 @@
   ';': 'core:confirm'
   'ctrl-l': 'pane:split-right'
   'ctrl-j': 'pane:split-down'
-  'down': 'core:move-to-bottom'
+  # 'down': 'core:move-to-bottom'
   'cmd-shift-c': "command-palette:copy-display-name"
 
 '.markdown-preview':
@@ -407,6 +411,8 @@
   'G': 'core:move-to-bottom'
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-l': 'window:focus-pane-on-right'
+  'space w h': 'window:focus-pane-on-left'
+  'space w l': 'window:focus-pane-on-right'
 
 'atom-text-editor#choose-pane-editor':
   '\\': 'choose-pane:last-focused'
