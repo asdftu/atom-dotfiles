@@ -17,7 +17,7 @@
   'cmd-ctrl-shift-up': 'window:move-active-item-to-pane-above'
   'cmd-ctrl-shift-down': 'window:move-active-item-to-pane-below'
 
-  # 'cmd-p': 'project-folder:add'
+  'cmd-p': 'project-folder:add'
 
   'cmd-x': 'vim-mode-plus:exchange-pane'
 
@@ -30,8 +30,8 @@
   # 'cmd-H': 'pane:move-to-very-left'
   # 'cmd-L': 'pane:move-to-very-right'
 
-  'cmd-2': 'paner:split-pane-down-stay'
-  'cmd-3': 'paner:split-pane-right-stay'
+  # 'cmd-2': 'paner:split-pane-down-stay'
+  # 'cmd-3': 'paner:split-pane-right-stay'
 
   'ctrl-[': 'core:cancel'
   'ctrl-g': 'core:cancel'
@@ -279,6 +279,10 @@
   'g h': 'vim-mode-plus-user:quick-highlight'
   'm': 'vim-mode-plus:toggle-preset-occurrence'
   'M': 'vim-mode-plus:toggle-preset-subword-occurrence'
+  # 'space t j': 'platformio-ide-terminal:prev'
+  # 'space t k': 'platformio-ide-terminal:next'
+  'space w v': 'pane:split-right-and-copy-active-item'
+  'space w s': 'pane:split-down-and-copy-active-item'
 
 'atom-text-editor.vim-mode-plus.normal-mode:not(.mgit-status), atom-text-editor.vim-mode-plus.visual-mode:not(.mgit-status)':
   '-': 'vim-mode-plus:replace-with-register'
@@ -371,8 +375,8 @@
 
 '.select-list': # for fuzzy-finder
   ';': 'core:confirm'
-  'ctrl-l': 'pane:split-right'
-  'ctrl-j': 'pane:split-down'
+  'ctrl-v': 'pane:split-right'
+  'ctrl-s': 'pane:split-down'
   # 'down': 'core:move-to-bottom'
   'cmd-shift-c': "command-palette:copy-display-name"
 

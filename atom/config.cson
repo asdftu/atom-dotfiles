@@ -120,7 +120,6 @@
       "autosave"
       "language-elm"
       "color-picker"
-      "recent-finder"
       "atom-hot-package-loader"
       "flow-ide"
       "language-julia"
@@ -167,6 +166,8 @@
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
       "intentions"
+      "emmet"
+      "narrow"
     ]
     telemetryConsent: "no"
     themes: [
@@ -239,6 +240,7 @@
     autoSelectEntireDocument: false
     formatOnSave: false
   mgit: {}
+  minimap: {}
   mprettier:
     formatOnSave:
       disabledParsers: [
@@ -293,7 +295,15 @@
   "project-folder":
     closeItemsForRemovedProject: true
     gitProjectDirectories: [
-      "~/go/src"
+      "~/git"
+    ]
+    gitProjectSearchMaxDepth: 3
+    projectRootDirectories: [
+      "~/git"
+      "~/github"
+      "~/svn"
+      "~/Documents/hexo"
+      "~/research"
     ]
   "quick-highlight":
     highlightSelection: false
