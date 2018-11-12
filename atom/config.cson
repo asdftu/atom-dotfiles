@@ -140,9 +140,6 @@
       "nuclide"
       "busy-signal"
       "linter-eslint"
-      "linter"
-      "linter-ui-default"
-      "intentions"
       "vim-mode-plus-auto-ime"
       "vim-mode-plus-move-to-symbols"
       "language-rust"
@@ -159,20 +156,23 @@
       "atom-clock"
       "hyperclick"
       "autocomplete-emojis"
-      "angular-snippets"
-      "language-actionscript"
-      "git-plus"
+      "language-clojure"
+      "emmet"
+      "ex-mode"
+      "go-plus"
+      "minimap"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
       "intentions"
       "emmet"
       "narrow"
+      "jslint"
     ]
     telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
-      "solarized-dark-syntax"
+      "atom-light-ui"
+      "solarized-light-syntax"
     ]
     titleBar: "hidden"
   "cursor-history":
@@ -297,7 +297,7 @@
     gitProjectDirectories: [
       "~/git"
     ]
-    gitProjectSearchMaxDepth: 3
+    gitProjectSearchMaxDepth: 5
     projectRootDirectories: [
       "~/git"
       "~/github"
@@ -417,10 +417,14 @@
       "fff"
       "x"
     ]
-  "vim-mode-plus-move-selected-text": {}
+  "vim-mode-plus-move-selected-text":
+    overwrite: true
   "vim-mode-plus-replace-with-execution":
     registerToSelectList: true
-  whitespace: {}
+  whitespace:
+    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnCurrentLine: false
+    removeTrailingWhitespace: false
 ".coffee.source":
   editor:
     autoIndent: true
