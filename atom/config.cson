@@ -161,6 +161,7 @@
       "ex-mode"
       "go-plus"
       "minimap"
+      "jslint"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [

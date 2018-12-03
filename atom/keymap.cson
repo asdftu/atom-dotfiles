@@ -3,7 +3,9 @@
 # -------------------------
 # 'atom-workspace:not(.atom-text-editor)':
   # 'ctrl-p': 'user:open-tryit-coffee'
-
+'.platform-darwin atom-workspace':
+  'alt-i': 'switch-header-source:switch' 
+  
 'atom-workspace':
 #   'space f f': 'fuzzy-finder:toggle-file-finder'
 #   'space f b': 'fuzzy-finder:toggle-buffer-finder'
@@ -47,7 +49,8 @@
 
 'atom-text-editor':
   'ctrl-cmd-p': 'mprettier:format'
-
+  'cmd-g': 'go-to-line:toggle'
+  'cmd-i': 'switch-header-source:switch' 
   # [cursor history]
   'ctrl-i': 'cursor-history:next'
   'ctrl-o': 'cursor-history:prev'
@@ -140,8 +143,10 @@
   'ctrl-right': 'check-right'
   'ctrl-left': 'check-left'
 
-  'cmd-i': 'transformer:run'
-  'shift-cmd-i': 'transformer:compile'
+  'cmd-left': 'pane:show-previous-item'
+  'cmd-right': 'pane:show-next-item'
+  # 'cmd-i': 'transformer:run' 
+  # 'shift-cmd-i': 'transformer:compile'
 
 'atom-workspace:not(.has-narrow) atom-text-editor.vim-mode-plus.normal-mode.has-inline-git-diff':
   'tab': 'git-diff:move-to-next-diff'
